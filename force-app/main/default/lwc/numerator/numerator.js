@@ -13,4 +13,9 @@ export default class Numerator extends LightningElement {
         const factor = event.detail;
         this.counter *=factor;
     }
+
+    handleDivision(event){
+        const divisor = event.detail;
+        this.counter /=divisor;
+    }
 }
