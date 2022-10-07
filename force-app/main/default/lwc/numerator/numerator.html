@@ -6,6 +6,18 @@
         <p class="slds-text-align_center slds-var-m-vertical_medium">
           Count: <lightning-formatted-number value={counter}></lightning-formatted-number>
         </p>
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+                <lightning-input 
+                label="Set adding number"
+                type="number"
+                min="0"
+                max="1000000"
+                value={addNumber}
+                onchange={handleAddingChange}>
+                </lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
         <c-controls
         class="slds-show slds-is-relative"
         onadd={handleIncrement}

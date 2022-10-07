@@ -5,6 +5,7 @@ export default class Numerator extends LightningElement {
 
     __currentCount = 0;
     priorCount = 0;
+    addNumber = 0;
 
     @api
     get counter(){
@@ -34,7 +35,11 @@ export default class Numerator extends LightningElement {
 
     @api
     maximizeCounter(){
-        this.counter += 1000000;
+        this.counter += this.addNumber;
+    }
+
+    handleAddingChange(event){
+        this.addNumber = parseInt(event.target.value);
     }
 
 
