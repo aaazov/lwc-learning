@@ -10,9 +10,17 @@
               value={startCounter}
               onchange={handleStartChange}>
             </lightning-input>
+            <lightning-input
+              label="Add A Number To Counter"
+              type="number"
+              min="0"
+              max="10000"
+              value={addToCounter}
+              onchange={handleAddChange}>
+            </lightning-input>
             <lightning-button 
               class="slds-var-p-vertical_xx-small"
-              label="Add 1m To Counter"
+              label="Add"
               onclick={handleMaximizeCounter}>
            </lightning-button>
           </lightning-layout-item>

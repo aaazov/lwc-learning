@@ -34,12 +34,8 @@ export default class Numerator extends LightningElement {
     }
 
     @api
-    maximizeCounter(){
-        this.counter += this.addNumber;
-    }
-
-    handleAddingChange(event){
-        this.addNumber = parseInt(event.target.value);
+    maximizeCounter(number){
+        this.counter += number;
     }
 
 
